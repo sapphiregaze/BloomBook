@@ -4,7 +4,7 @@ import SwiftUI
 struct bloombook_mobileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
     }
 }

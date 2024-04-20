@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CD0D8FBB2BD37C0900B1C6A6 /* bloombook_mobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FBA2BD37C0900B1C6A6 /* bloombook_mobileApp.swift */; };
-		CD0D8FBD2BD37C0900B1C6A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FBC2BD37C0900B1C6A6 /* ContentView.swift */; };
+		CD0D8FBD2BD37C0900B1C6A6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FBC2BD37C0900B1C6A6 /* MapView.swift */; };
 		CD0D8FBF2BD37C0A00B1C6A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0D8FBE2BD37C0A00B1C6A6 /* Assets.xcassets */; };
 		CD0D8FC22BD37C0A00B1C6A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0D8FC12BD37C0A00B1C6A6 /* Preview Assets.xcassets */; };
 		CD0D8FCC2BD37C0A00B1C6A6 /* bloombook_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FCB2BD37C0A00B1C6A6 /* bloombook_mobileTests.swift */; };
 		CD0D8FD62BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FD52BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift */; };
 		CD0D8FD82BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FD72BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift */; };
 		CD0D8FE52BD37FCF00B1C6A6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CD0D8FE42BD37FCF00B1C6A6 /* .gitignore */; };
+		CD0D8FE72BD431DE00B1C6A6 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FE62BD431DE00B1C6A6 /* LandingView.swift */; };
+		CD0D8FEA2BD445A100B1C6A6 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FE92BD445A100B1C6A6 /* Color+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		CD0D8FB72BD37C0900B1C6A6 /* bloombook-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bloombook-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0D8FBA2BD37C0900B1C6A6 /* bloombook_mobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloombook_mobileApp.swift; sourceTree = "<group>"; };
-		CD0D8FBC2BD37C0900B1C6A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD0D8FBC2BD37C0900B1C6A6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CD0D8FBE2BD37C0A00B1C6A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD0D8FC12BD37C0A00B1C6A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD0D8FC72BD37C0A00B1C6A6 /* bloombook-mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bloombook-mobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,8 @@
 		CD0D8FD52BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloombook_mobileUITests.swift; sourceTree = "<group>"; };
 		CD0D8FD72BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloombook_mobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD0D8FE42BD37FCF00B1C6A6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		CD0D8FE62BD431DE00B1C6A6 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		CD0D8FE92BD445A100B1C6A6 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				CD0D8FBA2BD37C0900B1C6A6 /* bloombook_mobileApp.swift */,
-				CD0D8FBC2BD37C0900B1C6A6 /* ContentView.swift */,
+				CD0D8FBC2BD37C0900B1C6A6 /* MapView.swift */,
+				CD0D8FE62BD431DE00B1C6A6 /* LandingView.swift */,
+				CD0D8FE82BD4458700B1C6A6 /* Extensions */,
 				CD0D8FBE2BD37C0A00B1C6A6 /* Assets.xcassets */,
 				CD0D8FC02BD37C0A00B1C6A6 /* Preview Content */,
 			);
@@ -128,6 +134,14 @@
 				CD0D8FD72BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift */,
 			);
 			path = "bloombook-mobileUITests";
+			sourceTree = "<group>";
+		};
+		CD0D8FE82BD4458700B1C6A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D8FE92BD445A100B1C6A6 /* Color+Hex.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0D8FBD2BD37C0900B1C6A6 /* ContentView.swift in Sources */,
+				CD0D8FE72BD431DE00B1C6A6 /* LandingView.swift in Sources */,
+				CD0D8FEA2BD445A100B1C6A6 /* Color+Hex.swift in Sources */,
+				CD0D8FBD2BD37C0900B1C6A6 /* MapView.swift in Sources */,
 				CD0D8FBB2BD37C0900B1C6A6 /* bloombook_mobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct MapView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -13,5 +13,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MapView()
 }
