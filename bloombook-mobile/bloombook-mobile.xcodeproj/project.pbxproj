@@ -17,6 +17,7 @@
 		CD0D8FE52BD37FCF00B1C6A6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CD0D8FE42BD37FCF00B1C6A6 /* .gitignore */; };
 		CD0D8FE72BD431DE00B1C6A6 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FE62BD431DE00B1C6A6 /* LandingView.swift */; };
 		CD0D8FEA2BD445A100B1C6A6 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FE92BD445A100B1C6A6 /* Color+Hex.swift */; };
+		CD248DFD2BD475F6005CDC44 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248DFC2BD475F6005CDC44 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		CD0D8FE42BD37FCF00B1C6A6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CD0D8FE62BD431DE00B1C6A6 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		CD0D8FE92BD445A100B1C6A6 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		CD248DF72BD4693A005CDC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CD248DFC2BD475F6005CDC44 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +104,11 @@
 		CD0D8FB92BD37C0900B1C6A6 /* bloombook-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				CD248DF72BD4693A005CDC44 /* Info.plist */,
 				CD0D8FBA2BD37C0900B1C6A6 /* bloombook_mobileApp.swift */,
 				CD0D8FBC2BD37C0900B1C6A6 /* MapView.swift */,
 				CD0D8FE62BD431DE00B1C6A6 /* LandingView.swift */,
+				CD72D25F2BD4635700CCC7C5 /* Helpers */,
 				CD0D8FE82BD4458700B1C6A6 /* Extensions */,
 				CD0D8FBE2BD37C0A00B1C6A6 /* Assets.xcassets */,
 				CD0D8FC02BD37C0A00B1C6A6 /* Preview Content */,
@@ -142,6 +147,14 @@
 				CD0D8FE92BD445A100B1C6A6 /* Color+Hex.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD72D25F2BD4635700CCC7C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD248DFC2BD475F6005CDC44 /* LocationManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0D8FE72BD431DE00B1C6A6 /* LandingView.swift in Sources */,
+				CD248DFD2BD475F6005CDC44 /* LocationManager.swift in Sources */,
 				CD0D8FEA2BD445A100B1C6A6 /* Color+Hex.swift in Sources */,
 				CD0D8FBD2BD37C0900B1C6A6 /* MapView.swift in Sources */,
 				CD0D8FBB2BD37C0900B1C6A6 /* bloombook_mobileApp.swift in Sources */,
@@ -445,6 +459,9 @@
 				DEVELOPMENT_TEAM = SH99S4FFP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bloombook-mobile/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BloomBook;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "$(PRODUCT_BUNDLE_PACKAGE_TYPE)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -474,6 +491,9 @@
 				DEVELOPMENT_TEAM = SH99S4FFP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "bloombook-mobile/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = BloomBook;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "$(PRODUCT_BUNDLE_PACKAGE_TYPE)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -29,6 +29,8 @@ struct LandingView: View {
                     
                 }.padding()
             }
+            
+            
         }
     }
 }
