@@ -1,6 +1,8 @@
 import express, { NextFunction } from "express";
 import mongoose from "mongoose";
 
+import UploadRouter from "./routers/upload.router";
+
 require("dotenv").config();
 const port: number = Number(process.env.PORT) || 8080;
 
@@ -13,6 +15,8 @@ app.use((req: express.Request, res: express.Response, next: NextFunction) => {
   res.setHeader("Access-Control-Allow-Headers", ["Content-Type"]);
   next();
 });
+
+app.use("/upload", UploadRouter);
 
 mongoose
   .connect(process.env.DB_HOST as string)
