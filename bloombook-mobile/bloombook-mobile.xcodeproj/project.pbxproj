@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD0D8FBB2BD37C0900B1C6A6 /* bloombook_mobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FBA2BD37C0900B1C6A6 /* bloombook_mobileApp.swift */; };
+		CD0D8FBD2BD37C0900B1C6A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FBC2BD37C0900B1C6A6 /* ContentView.swift */; };
+		CD0D8FBF2BD37C0A00B1C6A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0D8FBE2BD37C0A00B1C6A6 /* Assets.xcassets */; };
+		CD0D8FC22BD37C0A00B1C6A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0D8FC12BD37C0A00B1C6A6 /* Preview Assets.xcassets */; };
+		CD0D8FCC2BD37C0A00B1C6A6 /* bloombook_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FCB2BD37C0A00B1C6A6 /* bloombook_mobileTests.swift */; };
+		CD0D8FD62BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FD52BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift */; };
+		CD0D8FD82BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0D8FD72BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift */; };
+		CD0D8FE52BD37FCF00B1C6A6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CD0D8FE42BD37FCF00B1C6A6 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD0D8FC82BD37C0A00B1C6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0D8FAF2BD37C0900B1C6A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD0D8FB62BD37C0900B1C6A6;
+			remoteInfo = "bloombook-mobile";
+		};
+		CD0D8FD22BD37C0A00B1C6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD0D8FAF2BD37C0900B1C6A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD0D8FB62BD37C0900B1C6A6;
+			remoteInfo = "bloombook-mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD0D8FB72BD37C0900B1C6A6 /* bloombook-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bloombook-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0D8FBA2BD37C0900B1C6A6 /* bloombook_mobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloombook_mobileApp.swift; sourceTree = "<group>"; };
+		CD0D8FBC2BD37C0900B1C6A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD0D8FBE2BD37C0A00B1C6A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD0D8FC12BD37C0A00B1C6A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD0D8FC72BD37C0A00B1C6A6 /* bloombook-mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bloombook-mobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0D8FCB2BD37C0A00B1C6A6 /* bloombook_mobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloombook_mobileTests.swift; sourceTree = "<group>"; };
+		CD0D8FD12BD37C0A00B1C6A6 /* bloombook-mobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bloombook-mobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0D8FD52BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloombook_mobileUITests.swift; sourceTree = "<group>"; };
+		CD0D8FD72BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloombook_mobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CD0D8FE42BD37FCF00B1C6A6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD0D8FB42BD37C0900B1C6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0D8FC42BD37C0A00B1C6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0D8FCE2BD37C0A00B1C6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD0D8FAE2BD37C0900B1C6A6 = {
+			isa = PBXGroup;
+			children = (
+				CD0D8FE42BD37FCF00B1C6A6 /* .gitignore */,
+				CD0D8FB92BD37C0900B1C6A6 /* bloombook-mobile */,
+				CD0D8FCA2BD37C0A00B1C6A6 /* bloombook-mobileTests */,
+				CD0D8FD42BD37C0A00B1C6A6 /* bloombook-mobileUITests */,
+				CD0D8FB82BD37C0900B1C6A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD0D8FB82BD37C0900B1C6A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D8FB72BD37C0900B1C6A6 /* bloombook-mobile.app */,
+				CD0D8FC72BD37C0A00B1C6A6 /* bloombook-mobileTests.xctest */,
+				CD0D8FD12BD37C0A00B1C6A6 /* bloombook-mobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD0D8FB92BD37C0900B1C6A6 /* bloombook-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D8FBA2BD37C0900B1C6A6 /* bloombook_mobileApp.swift */,
+				CD0D8FBC2BD37C0900B1C6A6 /* ContentView.swift */,
+				CD0D8FBE2BD37C0A00B1C6A6 /* Assets.xcassets */,
+				CD0D8FC02BD37C0A00B1C6A6 /* Preview Content */,
+			);
+			path = "bloombook-mobile";
+			sourceTree = "<group>";
+		};
+		CD0D8FC02BD37C0A00B1C6A6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D8FC12BD37C0A00B1C6A6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD0D8FCA2BD37C0A00B1C6A6 /* bloombook-mobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D8FCB2BD37C0A00B1C6A6 /* bloombook_mobileTests.swift */,
+			);
+			path = "bloombook-mobileTests";
+			sourceTree = "<group>";
+		};
+		CD0D8FD42BD37C0A00B1C6A6 /* bloombook-mobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD0D8FD52BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift */,
+				CD0D8FD72BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift */,
+			);
+			path = "bloombook-mobileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD0D8FB62BD37C0900B1C6A6 /* bloombook-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0D8FDB2BD37C0A00B1C6A6 /* Build configuration list for PBXNativeTarget "bloombook-mobile" */;
+			buildPhases = (
+				CD0D8FB32BD37C0900B1C6A6 /* Sources */,
+				CD0D8FB42BD37C0900B1C6A6 /* Frameworks */,
+				CD0D8FB52BD37C0900B1C6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bloombook-mobile";
+			productName = "bloombook-mobile";
+			productReference = CD0D8FB72BD37C0900B1C6A6 /* bloombook-mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD0D8FC62BD37C0A00B1C6A6 /* bloombook-mobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0D8FDE2BD37C0A00B1C6A6 /* Build configuration list for PBXNativeTarget "bloombook-mobileTests" */;
+			buildPhases = (
+				CD0D8FC32BD37C0A00B1C6A6 /* Sources */,
+				CD0D8FC42BD37C0A00B1C6A6 /* Frameworks */,
+				CD0D8FC52BD37C0A00B1C6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD0D8FC92BD37C0A00B1C6A6 /* PBXTargetDependency */,
+			);
+			name = "bloombook-mobileTests";
+			productName = "bloombook-mobileTests";
+			productReference = CD0D8FC72BD37C0A00B1C6A6 /* bloombook-mobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD0D8FD02BD37C0A00B1C6A6 /* bloombook-mobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0D8FE12BD37C0A00B1C6A6 /* Build configuration list for PBXNativeTarget "bloombook-mobileUITests" */;
+			buildPhases = (
+				CD0D8FCD2BD37C0A00B1C6A6 /* Sources */,
+				CD0D8FCE2BD37C0A00B1C6A6 /* Frameworks */,
+				CD0D8FCF2BD37C0A00B1C6A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD0D8FD32BD37C0A00B1C6A6 /* PBXTargetDependency */,
+			);
+			name = "bloombook-mobileUITests";
+			productName = "bloombook-mobileUITests";
+			productReference = CD0D8FD12BD37C0A00B1C6A6 /* bloombook-mobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD0D8FAF2BD37C0900B1C6A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CD0D8FB62BD37C0900B1C6A6 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					CD0D8FC62BD37C0A00B1C6A6 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CD0D8FB62BD37C0900B1C6A6;
+					};
+					CD0D8FD02BD37C0A00B1C6A6 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CD0D8FB62BD37C0900B1C6A6;
+					};
+				};
+			};
+			buildConfigurationList = CD0D8FB22BD37C0900B1C6A6 /* Build configuration list for PBXProject "bloombook-mobile" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD0D8FAE2BD37C0900B1C6A6;
+			productRefGroup = CD0D8FB82BD37C0900B1C6A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD0D8FB62BD37C0900B1C6A6 /* bloombook-mobile */,
+				CD0D8FC62BD37C0A00B1C6A6 /* bloombook-mobileTests */,
+				CD0D8FD02BD37C0A00B1C6A6 /* bloombook-mobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD0D8FB52BD37C0900B1C6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0D8FC22BD37C0A00B1C6A6 /* Preview Assets.xcassets in Resources */,
+				CD0D8FE52BD37FCF00B1C6A6 /* .gitignore in Resources */,
+				CD0D8FBF2BD37C0A00B1C6A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0D8FC52BD37C0A00B1C6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0D8FCF2BD37C0A00B1C6A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD0D8FB32BD37C0900B1C6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0D8FBD2BD37C0900B1C6A6 /* ContentView.swift in Sources */,
+				CD0D8FBB2BD37C0900B1C6A6 /* bloombook_mobileApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0D8FC32BD37C0A00B1C6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0D8FCC2BD37C0A00B1C6A6 /* bloombook_mobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD0D8FCD2BD37C0A00B1C6A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD0D8FD62BD37C0A00B1C6A6 /* bloombook_mobileUITests.swift in Sources */,
+				CD0D8FD82BD37C0A00B1C6A6 /* bloombook_mobileUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD0D8FC92BD37C0A00B1C6A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD0D8FB62BD37C0900B1C6A6 /* bloombook-mobile */;
+			targetProxy = CD0D8FC82BD37C0A00B1C6A6 /* PBXContainerItemProxy */;
+		};
+		CD0D8FD32BD37C0A00B1C6A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD0D8FB62BD37C0900B1C6A6 /* bloombook-mobile */;
+			targetProxy = CD0D8FD22BD37C0A00B1C6A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD0D8FD92BD37C0A00B1C6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD0D8FDA2BD37C0A00B1C6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD0D8FDC2BD37C0A00B1C6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bloombook-mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = SH99S4FFP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sapphiregaze.bloombook-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD0D8FDD2BD37C0A00B1C6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"bloombook-mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = SH99S4FFP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sapphiregaze.bloombook-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD0D8FDF2BD37C0A00B1C6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sapphiregaze.bloombook-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bloombook-mobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bloombook-mobile";
+			};
+			name = Debug;
+		};
+		CD0D8FE02BD37C0A00B1C6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sapphiregaze.bloombook-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bloombook-mobile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bloombook-mobile";
+			};
+			name = Release;
+		};
+		CD0D8FE22BD37C0A00B1C6A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sapphiregaze.bloombook-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bloombook-mobile";
+			};
+			name = Debug;
+		};
+		CD0D8FE32BD37C0A00B1C6A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sapphiregaze.bloombook-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bloombook-mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD0D8FB22BD37C0900B1C6A6 /* Build configuration list for PBXProject "bloombook-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0D8FD92BD37C0A00B1C6A6 /* Debug */,
+				CD0D8FDA2BD37C0A00B1C6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0D8FDB2BD37C0A00B1C6A6 /* Build configuration list for PBXNativeTarget "bloombook-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0D8FDC2BD37C0A00B1C6A6 /* Debug */,
+				CD0D8FDD2BD37C0A00B1C6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0D8FDE2BD37C0A00B1C6A6 /* Build configuration list for PBXNativeTarget "bloombook-mobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0D8FDF2BD37C0A00B1C6A6 /* Debug */,
+				CD0D8FE02BD37C0A00B1C6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD0D8FE12BD37C0A00B1C6A6 /* Build configuration list for PBXNativeTarget "bloombook-mobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0D8FE22BD37C0A00B1C6A6 /* Debug */,
+				CD0D8FE32BD37C0A00B1C6A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD0D8FAF2BD37C0900B1C6A6 /* Project object */;
+}
