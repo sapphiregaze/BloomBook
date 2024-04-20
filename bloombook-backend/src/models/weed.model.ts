@@ -15,6 +15,10 @@ const WeedSchema: mongoose.Schema<Weed> = new Schema<Weed>({
     type: String,
     required: true,
   },
+  file_path: {
+    type: String,
+    required: true,
+  },
 });
 
 const WeedModel: mongoose.Model<Weed> = mongoose.model<Weed>(
@@ -22,4 +26,4 @@ const WeedModel: mongoose.Model<Weed> = mongoose.model<Weed>(
   WeedSchema
 );
 
-export { WeedSchema, WeedModel };
+export default WeedModel;

@@ -2,6 +2,7 @@ import express, { NextFunction } from "express";
 import mongoose from "mongoose";
 
 import UploadRouter from "./routers/upload.router";
+import WeedRouter from "./routers/weed.router";
 
 require("dotenv").config();
 const port: number = Number(process.env.PORT) || 8080;
@@ -17,6 +18,7 @@ app.use((req: express.Request, res: express.Response, next: NextFunction) => {
 });
 
 app.use("/upload", UploadRouter);
+app.use("/weed", WeedRouter);
 
 mongoose
   .connect(process.env.DB_HOST as string)

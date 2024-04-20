@@ -31,7 +31,9 @@ const storage: multer.StorageEngine = multer.diskStorage({
   ) {
     cb(
       null,
-      String(new Date().toISOString()) + path.extname(file.originalname)
+      `${String(new Date().toISOString())}-${
+        path.parse(file.originalname).name
+      }${path.extname(file.originalname)}`
     );
   },
 });
