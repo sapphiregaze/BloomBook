@@ -19,7 +19,9 @@ UploadRouter.post(
         req.file?.mimetype as string
       );
 
-      const cleanData = data.replace(/"/g, "'").replace(/\r?\n|\r/g, " ");
+      const cleanData: string = data
+        .replace(/"/g, "'")
+        .replace(/\r?\n|\r/g, " ");
 
       new WeedModel({
         latitude: latitude,
@@ -28,6 +30,7 @@ UploadRouter.post(
         file_path: req.file?.path,
       }).save();
 
+      console.log({ data: cleanData });
       res.status(200).json({ data: cleanData });
     } catch (err) {
       console.error("Error uploading file:", (err as Error).message);
