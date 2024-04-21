@@ -7,6 +7,7 @@ struct MapView: View {
     @State private var isShowingCamera = false
     @State private var image: UIImage?
     
+    @StateObject private var plantDetailView = PlantDetailView()
     @State private var plants: [Plant] = []
     @State private var reloadMap = false
     
@@ -14,11 +15,30 @@ struct MapView: View {
         NavigationView {
             ZStack {
                 Map(coordinateRegion: $manager.region, showsUserLocation: true, annotationItems: plants) { plant in
-                    MapMarker(coordinate: CLLocationCoordinate2D(latitude: plant.latitude, longitude: plant.longitude))
+                    MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: plant.latitude, longitude: plant.longitude)) {
+                        Image(systemName: "leaf.fill")
+                            .foregroundColor(.green)
+                            .frame(width: 100, height: 100)
+                            .padding(15)
+                            .zIndex(10.0)
+                            .onTapGesture {
+                                plantDetailView.selectPlant(plant)
+                            }
+                        }
                 }
                 .ignoresSafeArea(.all)
                 .zIndex(-1.0)
+                .onTapGesture {
+                    plantDetailView.deselectPlant()
+                }
                 
+                
+                if let selectedPlant = plantDetailView.selectedPlant {
+                    PlantDetailsModal(plant: selectedPlant)
+                        .environmentObject(plantDetailView)
+                        .padding()
+                }
+
                 HStack {
                     Spacer()
                     
