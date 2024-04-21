@@ -44,6 +44,10 @@ import MapKit
         }
         return (latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
     }
+    
+    func reloadMapView() {
+        region = region
+    }
 }
 
 extension LocationManager: CLLocationManagerDelegate {
