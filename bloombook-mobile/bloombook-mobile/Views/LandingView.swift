@@ -15,7 +15,9 @@ struct LandingView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .padding(.leading, 15)
+                    
                     Spacer(minLength: 450)
+                    
                     NavigationLink(destination: MapView()) {
                         Text("Get Started")
                             .foregroundColor(Color(hex: 0xECD7BC))
@@ -29,9 +31,8 @@ struct LandingView: View {
                     
                 }.padding()
             }
-            
-            
         }
+        .navigationBarHidden(true)
     }
 }
 
