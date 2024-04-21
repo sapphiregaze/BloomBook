@@ -19,14 +19,16 @@ UploadRouter.post(
         req.file?.mimetype as string
       );
 
+      const cleanData = data.replace(/"/g, "'").replace(/\r?\n|\r/g, " ");
+
       new WeedModel({
         latitude: latitude,
         longitude: longitude,
-        data: data,
+        data: cleanData,
         file_path: req.file?.path,
       }).save();
 
-      res.status(200).json({ data: data });
+      res.status(200).json({ data: cleanData });
     } catch (err) {
       console.error("Error uploading file:", (err as Error).message);
       res.status(401).send({ error: (err as Error).message });
