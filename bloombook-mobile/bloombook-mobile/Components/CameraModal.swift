@@ -4,9 +4,10 @@ import AVFoundation
 struct CameraCaptureModal: View {
     @Binding var isShowingCamera: Bool
     @Binding var image: UIImage?
+    var onPhotoCapture: (UIImage) -> Void // Define the callback
     
     var body: some View {
-        CameraViewController(isShowingCamera: $isShowingCamera, image: $image)
+        CameraViewController(isShowingCamera: $isShowingCamera, image: $image, onPhotoCapture: onPhotoCapture) // Pass the callback
             .ignoresSafeArea(.all)
     }
 }
@@ -14,6 +15,7 @@ struct CameraCaptureModal: View {
 struct CameraViewController: UIViewControllerRepresentable {
     @Binding var isShowingCamera: Bool
     @Binding var image: UIImage?
+    var onPhotoCapture: (UIImage) -> Void // Receive the callback
     
     func makeCoordinator() -> Coordinator {
         return Coordinator(parent: self)
@@ -38,6 +40,7 @@ struct CameraViewController: UIViewControllerRepresentable {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let image = info[.originalImage] as? UIImage {
                 parent.image = image
+                parent.onPhotoCapture(image) // Call the callback when photo is captured
             }
             parent.isShowingCamera = false
         }

@@ -11,6 +11,34 @@ struct MapView: View {
     @State private var plants: [Plant] = []
     @State private var reloadMap = false
     
+    func reload() {
+        requestData(from: "http://100.105.23.103:8080/weed/", method: .GET) { result in
+            switch result {
+            case .success(let data):
+                if let responseData = String(data: data, encoding: .utf8) {
+                    do {
+                        let plants = try JSONDecoder().decode([Plant].self, from: responseData.data(using: .utf8)!)
+                        self.plants = plants
+                        self.reloadMap = true
+                    } catch {
+                        print("Error decoding JSON: \(error)")
+                    }
+                } else {
+                    print("Invalid response data format")
+                }
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func recenter() {
+        reload()
+        if let currentLocation = manager.getLocation() {
+            manager.setCustomLocation(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
+        }
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -43,9 +71,7 @@ struct MapView: View {
                     Spacer()
                     
                     Button("➤ Re-center") {
-                        if let currentLocation = manager.getLocation() {
-                            manager.setCustomLocation(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
-                        }
+                        recenter()
                     }
                     .foregroundColor(Color(hex: 0xECD7BC))
                     .padding(.vertical, 15)
@@ -68,7 +94,20 @@ struct MapView: View {
                     .cornerRadius(50)
                     .font(.headline)
                     .sheet(isPresented: $isShowingCamera) {
-                        CameraCaptureModal(isShowingCamera: self.$isShowingCamera, image: self.$image)
+                        CameraCaptureModal(isShowingCamera: self.$isShowingCamera, image: self.$image, onPhotoCapture: { capturedImage in
+                                recenter()
+                                let currentLatitude = manager.region.center.latitude
+                                let currentLongitude = manager.region.center.longitude
+                                uploadPhoto(from: "http://100.105.23.103:8080/upload/", image: capturedImage, latitude: currentLatitude, longitude: currentLongitude) { result in
+                                    switch result {
+                                        case .success(let data):
+                                            print("Upload successful. Response data: \(data)")
+                                            recenter()
+                                        case .failure(let error):
+                                            print("Error uploading photo: \(error)")
+                                    }
+                                }
+                        })
                     }
                     
                     Spacer()
@@ -78,23 +117,7 @@ struct MapView: View {
 
             }
             .onAppear {
-                requestData(from: "http://100.105.23.103:8080/weed", method: .GET) { result in
-                    switch result {
-                    case .success(let data):
-                        if let responseData = String(data: data, encoding: .utf8) {
-                            do {
-                                let plants = try JSONDecoder().decode([Plant].self, from: responseData.data(using: .utf8)!)
-                                self.plants = plants
-                            } catch {
-                                print("Error decoding JSON: \(error)")
-                            }
-                        } else {
-                            print("Invalid response data format")
-                        }
-                    case .failure(let error):
-                        print("Error: \(error.localizedDescription)")
-                    }
-                }
+                reload()
             }
             .onChange(of: reloadMap) { _ in
                 manager.reloadMapView()
