@@ -22,7 +22,6 @@
 		CD248E072BD4B24F005CDC44 /* RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248E062BD4B24F005CDC44 /* RequestHelper.swift */; };
 		CD248E092BD4D8EB005CDC44 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248E082BD4D8EB005CDC44 /* Struct.swift */; };
 		CD248E0B2BD4DBC2005CDC44 /* PlantDetailsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248E0A2BD4DBC2005CDC44 /* PlantDetailsModal.swift */; };
-		CD248E0D2BD4FC71005CDC44 /* RequestCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248E0C2BD4FC71005CDC44 /* RequestCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +62,6 @@
 		CD248E062BD4B24F005CDC44 /* RequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHelper.swift; sourceTree = "<group>"; };
 		CD248E082BD4D8EB005CDC44 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		CD248E0A2BD4DBC2005CDC44 /* PlantDetailsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsModal.swift; sourceTree = "<group>"; };
-		CD248E0C2BD4FC71005CDC44 /* RequestCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +183,6 @@
 				CD248E082BD4D8EB005CDC44 /* Struct.swift */,
 				CD248DFC2BD475F6005CDC44 /* LocationManager.swift */,
 				CD248E062BD4B24F005CDC44 /* RequestHelper.swift */,
-				CD248E0C2BD4FC71005CDC44 /* RequestCall.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -322,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD248E092BD4D8EB005CDC44 /* Struct.swift in Sources */,
-				CD248E0D2BD4FC71005CDC44 /* RequestCall.swift in Sources */,
 				CD0D8FE72BD431DE00B1C6A6 /* LandingView.swift in Sources */,
 				CD248E072BD4B24F005CDC44 /* RequestHelper.swift in Sources */,
 				CD248E0B2BD4DBC2005CDC44 /* PlantDetailsModal.swift in Sources */,

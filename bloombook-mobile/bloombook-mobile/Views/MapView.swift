@@ -45,9 +45,9 @@ struct MapView: View {
                 Map(coordinateRegion: $manager.region, showsUserLocation: true, annotationItems: plants) { plant in
                     MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: plant.latitude, longitude: plant.longitude)) {
                         Image(systemName: "leaf.fill")
+                            .resizable()
                             .foregroundColor(.green)
-                            .frame(width: 100, height: 100)
-                            .padding(15)
+                            .frame(width: 30, height: 30)
                             .zIndex(10.0)
                             .onTapGesture {
                                 plantDetailView.selectPlant(plant)
